@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c0c0c0"/>
+      <stop offset="40%" style="stop-color:#888888"/>
+      <stop offset="60%" style="stop-color:#c8c8c8"/>
+      <stop offset="100%" style="stop-color:#a0a0a0"/>
+    </linearGradient>
+    <linearGradient id="glass1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a5c;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#0d2035;stop-opacity:0.7"/>
+    </linearGradient>
+    <linearGradient id="glass2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#243b55;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#141e30;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.08"/>
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.02"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bg)"/>
+
+  <!-- Curtain wall grid - main facade -->
+  <!-- Vertical mullions -->
+  <rect x="200" y="0" width="4" height="800" fill="url(#metal)" opacity="0.6"/>
+  <rect x="360" y="0" width="4" height="800" fill="url(#metal)" opacity="0.6"/>
+  <rect x="520" y="0" width="4" height="800" fill="url(#metal)" opacity="0.6"/>
+  <rect x="680" y="0" width="4" height="800" fill="url(#metal)" opacity="0.6"/>
+  <rect x="840" y="0" width="4" height="800" fill="url(#metal)" opacity="0.6"/>
+  <rect x="1000" y="0" width="4" height="800" fill="url(#metal)" opacity="0.6"/>
+
+  <!-- Horizontal transoms -->
+  <rect x="200" y="100" width="804" height="3" fill="url(#metal)" opacity="0.5"/>
+  <rect x="200" y="220" width="804" height="3" fill="url(#metal)" opacity="0.5"/>
+  <rect x="200" y="340" width="804" height="3" fill="url(#metal)" opacity="0.5"/>
+  <rect x="200" y="460" width="804" height="3" fill="url(#metal)" opacity="0.5"/>
+  <rect x="200" y="580" width="804" height="3" fill="url(#metal)" opacity="0.5"/>
+  <rect x="200" y="700" width="804" height="3" fill="url(#metal)" opacity="0.5"/>
+
+  <!-- Glass panels - row 1 -->
+  <rect x="204" y="0" width="152" height="100" fill="url(#glass1)"/>
+  <rect x="364" y="0" width="152" height="100" fill="url(#glass2)"/>
+  <rect x="524" y="0" width="152" height="100" fill="url(#glass1)"/>
+  <rect x="684" y="0" width="152" height="100" fill="url(#glass2)"/>
+  <rect x="844" y="0" width="152" height="100" fill="url(#glass1)"/>
+
+  <!-- Glass panels - row 2 (highlighted) -->
+  <rect x="204" y="103" width="152" height="114" fill="url(#glass2)"/>
+  <rect x="364" y="103" width="152" height="114" fill="url(#glass1)" opacity="1.2"/>
+  <rect x="524" y="103" width="152" height="114" fill="url(#glass2)"/>
+  <rect x="684" y="103" width="152" height="114" fill="url(#glass1)"/>
+  <rect x="844" y="103" width="152" height="114" fill="url(#glass2)"/>
+
+  <!-- Glass panels - row 3 -->
+  <rect x="204" y="223" width="152" height="114" fill="url(#glass1)"/>
+  <rect x="364" y="223" width="152" height="114" fill="url(#glass2)"/>
+  <rect x="524" y="223" width="152" height="114" fill="url(#glass1)"/>
+  <rect x="684" y="223" width="152" height="114" fill="url(#glass2)"/>
+  <rect x="844" y="223" width="152" height="114" fill="url(#glass1)"/>
+
+  <!-- Glass panels - rows 4-6 -->
+  <rect x="204" y="343" width="152" height="114" fill="url(#glass2)"/>
+  <rect x="364" y="343" width="152" height="114" fill="url(#glass1)"/>
+  <rect x="524" y="343" width="152" height="114" fill="url(#glass2)"/>
+  <rect x="684" y="343" width="152" height="114" fill="url(#glass1)"/>
+  <rect x="844" y="343" width="152" height="114" fill="url(#glass2)"/>
+
+  <rect x="204" y="463" width="152" height="114" fill="url(#glass1)"/>
+  <rect x="364" y="463" width="152" height="114" fill="url(#glass2)"/>
+  <rect x="524" y="463" width="152" height="114" fill="url(#glass1)"/>
+  <rect x="684" y="463" width="152" height="114" fill="url(#glass2)"/>
+  <rect x="844" y="463" width="152" height="114" fill="url(#glass1)"/>
+
+  <rect x="204" y="583" width="152" height="114" fill="url(#glass2)"/>
+  <rect x="364" y="583" width="152" height="114" fill="url(#glass1)"/>
+  <rect x="524" y="583" width="152" height="114" fill="url(#glass2)"/>
+  <rect x="684" y="583" width="152" height="114" fill="url(#glass1)"/>
+  <rect x="844" y="583" width="152" height="114" fill="url(#glass2)"/>
+
+  <rect x="204" y="703" width="152" height="97" fill="url(#glass1)"/>
+  <rect x="364" y="703" width="152" height="97" fill="url(#glass2)"/>
+  <rect x="524" y="703" width="152" height="97" fill="url(#glass1)"/>
+  <rect x="684" y="703" width="152" height="97" fill="url(#glass2)"/>
+  <rect x="844" y="703" width="152" height="97" fill="url(#glass1)"/>
+
+  <!-- Glass reflection highlights -->
+  <rect x="204" y="103" width="60" height="114" fill="url(#shine)"/>
+  <rect x="524" y="343" width="60" height="114" fill="url(#shine)"/>
+  <rect x="684" y="463" width="60" height="114" fill="url(#shine)"/>
+
+  <!-- Diagonal light sweep -->
+  <polygon points="0,0 300,0 0,400" fill="white" opacity="0.02"/>
+
+  <!-- Left side panel framing -->
+  <rect x="0" y="0" width="200" height="800" fill="#0a0a0a" opacity="0.6"/>
+  <rect x="196" y="0" width="8" height="800" fill="url(#metal)" opacity="0.8"/>
+
+  <!-- Right fade -->
+  <rect x="1004" y="0" width="196" height="800" fill="#0a0a0a" opacity="0.6"/>
+  <rect x="1000" y="0" width="8" height="800" fill="url(#metal)" opacity="0.8"/>
+
+  <!-- Subtle metallic frame overlay top/bottom -->
+  <rect x="200" y="0" width="804" height="6" fill="url(#metal)" opacity="0.7"/>
+  <rect x="200" y="794" width="804" height="6" fill="url(#metal)" opacity="0.7"/>
+</svg>

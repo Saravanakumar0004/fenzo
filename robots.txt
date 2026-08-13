@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /admin
+Disallow: /*.json$
+
+Sitemap: https://www.fenzoaluminium.com/sitemap.xml
+
+# Crawl-delay for considerate bots
+Crawl-delay: 10

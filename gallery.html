@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | FENZO Aluminium Windows & Doors Madurai</title>
+  <meta name="description" content="Browse the FENZO Aluminium gallery — installations of sliding windows, curtain walls, tilt-turn systems, railings and more across Tamil Nadu.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fenzo.css">
+  <style>
+    .gallery-filters { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:48px; }
+    .gf-btn { background:transparent; border:1px solid rgba(192,192,192,0.3); color:var(--color-grey-400); padding:8px 20px; border-radius:4px; font-size:13px; cursor:pointer; transition:all 0.3s; font-family:'Poppins',sans-serif; }
+    .gf-btn:hover,.gf-btn.active { background:var(--gradient-metal); color:var(--color-black); border-color:transparent; font-weight:600; }
+    .gallery-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    @media(max-width:768px){ .gallery-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:480px){ .gallery-grid { grid-template-columns:1fr; } }
+    .gallery-thumb { border-radius:8px; overflow:hidden; cursor:pointer; position:relative; }
+    .gallery-thumb-inner { width:100%; height:260px; display:block; transition:transform 0.5s ease; }
+    .gallery-thumb:hover .gallery-thumb-inner { transform:scale(1.04); }
+    .gallery-thumb-overlay { position:absolute; inset:0; background:rgba(0,0,0,0.5); opacity:0; transition:opacity 0.3s; display:flex; align-items:center; justify-content:center; border-radius:8px; }
+    .gallery-thumb-overlay i { font-size:32px; color:#fff; }
+    .gallery-thumb:hover .gallery-thumb-overlay { opacity:1; }
+    .gallery-item { transition:opacity 0.4s; }
+    .gallery-item.hidden { display:none; }
+    .gallery-lightbox { position:fixed; inset:0; z-index:10000; background:rgba(0,0,0,0.95); display:flex; align-items:center; justify-content:center; opacity:0; visibility:hidden; transition:opacity 0.3s, visibility 0.3s; backdrop-filter:blur(10px); }
+    .gallery-lightbox.active { opacity:1; visibility:visible; }
+    .lightbox-content { max-width:800px; width:90%; display:flex; justify-content:center; }
+  </style>
+</head>
+<body>
+<div id="preloader"><div class="preloader-inner"><img src="images/logo1.png" alt="FENZO" class="preloader-logo"><div class="preloader-bar"><div class="preloader-bar-fill"></div></div></div></div>
+
+<nav class="navbar-fenzo">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo1.png" alt="FENZO Aluminium"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li class="nav-dropdown"><a href="products.html">Products ▾</a><ul class="nav-dropdown-menu"><li><a href="products.html#sliding">Sliding Systems</a></li><li><a href="products.html#openable">Openable Windows</a></li><li><a href="products.html#tilt-turn">Tilt &amp; Turn</a></li><li><a href="products.html#folding">Folding Doors</a></li><li><a href="products.html#curtain-wall">Curtain Wall</a></li><li><a href="products.html#railings">Railings</a></li><li><a href="products.html#skylights">Skylights</a></li></ul></li>
+      <li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li><li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="quote.html" class="nav-cta">Get Quote</a></li>
+    </ul>
+    <button class="nav-hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav-overlay"></div>
+<div class="mobile-nav"><button class="mobile-nav-close" aria-label="Close">&times;</button><a href="index.html" style="display:block;margin-bottom:24px;"><img src="images/logo1.png" alt="FENZO" style="height:40px;"></a><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li class="has-sub"><a href="#">Products</a><ul><li><a href="products.html#sliding">Sliding Systems</a></li><li><a href="products.html#openable">Openable Windows</a></li><li><a href="products.html#tilt-turn">Tilt &amp; Turn</a></li><li><a href="products.html#folding">Folding Doors</a></li><li><a href="products.html#curtain-wall">Curtain Wall</a></li><li><a href="products.html#railings">Railings</a></li><li><a href="products.html#skylights">Skylights</a></li></ul></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="quote.html" style="color:#c0c0c0;font-weight:700;">Get Free Quote →</a></li></ul><div style="margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.08);"><a href="tel:+919524566995" style="color:#c0c0c0;font-size:15px;display:block;margin-bottom:8px;"><i class="bi bi-telephone me-2"></i>+91 9524566995</a><a href="mailto:sales.fenzo@gmail.com" style="color:#c0c0c0;font-size:14px;"><i class="bi bi-envelope me-2"></i>sales.fenzo@gmail.com</a></div></div>
+
+<section class="page-hero" style="background:linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.68)) center/cover, url('images/assets/im3.jpg') center/cover no-repeat;">
+  <div class="container-fenzo"><div class="page-hero-content">
+    <nav class="breadcrumb-fenzo"><a href="index.html">Home</a><span>/</span><span class="current">Gallery</span></nav>
+    <p class="section-eyebrow">Visual Showcase</p>
+    <h1 class="section-title">Our <span>Gallery</span></h1>
+    <div class="section-divider"></div>
+    <p class="section-desc">A curated selection of FENZO installations — premium aluminium craftsmanship across every project type.</p>
+  </div></div>
+</section>
+
+<section class="section-pad">
+  <div class="container-fenzo">
+    <div class="gallery-filters">
+      <button class="gf-btn active" data-filter="all">All</button>
+      <button class="gf-btn" data-filter="sliding">Sliding Systems</button>
+      <button class="gf-btn" data-filter="openable">Openable Windows</button>
+      <button class="gf-btn" data-filter="tilt-turn">Tilt &amp; Turn</button>
+      <button class="gf-btn" data-filter="curtain-wall">Curtain Wall</button>
+      <button class="gf-btn" data-filter="folding">Folding Doors</button>
+      <button class="gf-btn" data-filter="railing">Railings</button>
+      <button class="gf-btn" data-filter="fixed-windows">Fixed Windows</button>
+      <button class="gf-btn" data-filter="basic-slim">Basic Slim</button>
+      <button class="gf-btn" data-filter="skylight">Skylight</button>
+      <button class="gf-btn" data-filter="elevation">Elevation</button>
+      <button class="gf-btn" data-filter="facade">Facade</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+
+      <div class="gallery-item" data-cat="openable">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/im3.jpg" alt="Openable Window System" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="curtain-wall">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/im2.jpg" alt="Curtain Wall System" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="tilt-turn">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/im6.jpg" alt="Tilt & Turn Window" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="railing">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/im9.jpg" alt="Aluminium Balcony Railing" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="sliding">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/im5.jpg" alt="Sliding Door System" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="sliding">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/im7.jpg" alt="Sliding Door - Balcony" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="curtain-wall">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/im1.jpg" alt="Aluminium Facade" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="openable">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/im8.jpg" alt="Openable Windows" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="openable">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/im4.jpg" alt="Openable Window Installation" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="openable">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/im10.jpg" alt="Openable Window Installation" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="sliding">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Sliding-windows/1.jpg" alt="Sliding Windows — Project Installation" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="sliding">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Sliding-windows/2.jpg" alt="Sliding Windows — Residential" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="folding">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/Bifold-door.jpg" alt="Folding / Bi-fold Door System" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="fixed-windows">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Fixed-windows/1.jpg" alt="Fixed Window Installation" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="fixed-windows">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Fixed-windows/2.jpg" alt="Fixed Windows — Residential" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="basic-slim">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Basic-slim/1.jpg" alt="Basic Slim Series — Aluminium Windows" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="basic-slim">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Basic-slim/2.jpg" alt="Basic Slim Series — Installation" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="basic-slim">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Basic-slim/3.jpg" alt="Basic Slim Series — Window Detail" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="basic-slim">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Basic-slim/4.jpg" alt="Basic Slim Series — Residential Project" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="skylight">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Skylight/1.jpg" alt="Aluminium Skylight — Roof Glazing" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="elevation">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Elevation/1.jpg" alt="Glazed Elevation — Commercial Building" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-cat="facade">
+        <div class="gallery-thumb">
+          <div class="gallery-thumb-inner"><img src="images/assets/projects/Facade/1.jpg" alt="Double-Height Glass Facade — Villa" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="gallery-thumb-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="gallery-lightbox" id="galleryLightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <button class="lightbox-prev" id="lightboxPrev">&#8249;</button>
+  <button class="lightbox-next" id="lightboxNext">&#8250;</button>
+  <div class="lightbox-content">
+    <div id="lightboxImg" style="width:100%;max-width:800px;max-height:80vh;border-radius:8px;overflow:hidden;"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container-fenzo">
+    <div class="row g-5">
+      <div class="col-lg-4"><img src="images/logo1.png" alt="FENZO" class="footer-logo"><p class="footer-desc">Premium aluminium windows, doors, and architectural facade solutions. Connect with Nature.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="https://wa.me/919524566995" target="_blank"><i class="fab fa-whatsapp"></i></a></div></div>
+      <div class="col-lg-2 col-6"><p class="footer-heading">Products</p><ul class="footer-links"><li><a href="products.html#sliding">Sliding Systems</a></li><li><a href="products.html#openable">Openable Windows</a></li><li><a href="products.html#tilt-turn">Tilt &amp; Turn</a></li><li><a href="products.html#folding">Folding Doors</a></li><li><a href="products.html#curtain-wall">Curtain Wall</a></li><li><a href="products.html#railings">Railings</a></li><li><a href="products.html#skylights">Skylights</a></li></ul></div>
+      <div class="col-lg-2 col-6"><p class="footer-heading">Company</p><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="col-lg-4"><p class="footer-heading">Get in Touch</p><div class="footer-contact-item"><i class="bi bi-geo-alt footer-contact-icon"></i><div class="footer-contact-text">21, Bypass Road, Avaniyapuram, Madurai – 625012</div></div><div class="footer-contact-item"><i class="bi bi-telephone footer-contact-icon"></i><div class="footer-contact-text"><a href="tel:+919524566995">+91 9524566995</a></div></div><div class="footer-contact-item"><i class="bi bi-envelope footer-contact-icon"></i><div class="footer-contact-text"><a href="mailto:sales.fenzo@gmail.com">sales.fenzo@gmail.com</a></div></div></div>
+    </div>
+  </div>
+  <div class="container-fenzo"><div class="footer-bottom"><p class="footer-bottom-text">&copy; 2026 FENZO Aluminium Windows &amp; Doors. All rights reserved.</p></div></div>
+</footer>
+
+<a href="https://wa.me/919524566995?text=Hello%20FENZO%2C%20I%20am%20interested%20in%20your%20aluminium%20products." class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span class="wa-tooltip">Chat with us!</span></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/fenzo.js"></script>
+<script>
+// Filter
+document.querySelectorAll('.gf-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.gf-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const filter = this.dataset.filter;
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      const cat = item.dataset.cat || '';
+      if (filter === 'all' || cat.includes(filter)) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+  });
+});
+
+// Lightbox — built from the grid itself so it always stays in sync
+const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+const galleryImages = galleryItems.map(item => {
+  const img = item.querySelector('img');
+  return { src: img.getAttribute('src'), label: img.alt };
+});
+galleryItems.forEach((item, i) => {
+  item.querySelector('.gallery-thumb').addEventListener('click', () => openLightbox(i));
+});
+
+let currentIdx = 0;
+function openLightbox(idx) {
+  currentIdx = idx;
+  renderLightboxItem(idx);
+  document.getElementById('galleryLightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function renderLightboxItem(idx) {
+  const el = document.getElementById('lightboxImg');
+  const item = galleryImages[idx];
+  el.style.minHeight = '400px';
+  el.style.position = 'relative';
+  el.innerHTML = `<img src="${item.src}" alt="${item.label}" style="width:100%;height:100%;max-height:80vh;object-fit:contain;display:block;border-radius:8px;"><span style="position:absolute;bottom:12px;left:12px;color:#fff;font-size:14px;background:rgba(0,0,0,0.6);padding:6px 14px;border-radius:4px;">${item.label}</span>`;
+}
+document.getElementById('lightboxClose').onclick = () => {
+  document.getElementById('galleryLightbox').classList.remove('active');
+  document.body.style.overflow = '';
+};
+document.getElementById('galleryLightbox').addEventListener('click', e => {
+  if (e.target.id === 'galleryLightbox' || e.target.classList.contains('lightbox-content')) {
+    e.currentTarget.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+document.getElementById('lightboxPrev').onclick = () => {
+  currentIdx = (currentIdx - 1 + galleryImages.length) % galleryImages.length;
+  renderLightboxItem(currentIdx);
+};
+document.getElementById('lightboxNext').onclick = () => {
+  currentIdx = (currentIdx + 1) % galleryImages.length;
+  renderLightboxItem(currentIdx);
+};
+document.addEventListener('keydown', e => {
+  const lb = document.getElementById('galleryLightbox');
+  if (!lb.classList.contains('active')) return;
+  if (e.key === 'Escape') { lb.classList.remove('active'); document.body.style.overflow = ''; }
+  if (e.key === 'ArrowLeft') { currentIdx = (currentIdx - 1 + galleryImages.length) % galleryImages.length; renderLightboxItem(currentIdx); }
+  if (e.key === 'ArrowRight') { currentIdx = (currentIdx + 1) % galleryImages.length; renderLightboxItem(currentIdx); }
+});
+</script>
+</body>
+</html>
+
+
+
+

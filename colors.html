@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colours & Finishes | FENZO Aluminium Windows & Doors Madurai</title>
+  <meta name="description" content="Explore FENZO's full range of aluminium window and door finishes — powder coated, anodised, and wood grain textures in over 20 colours.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fenzo.css">
+  <style>
+    .finish-tabs { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:48px; }
+    .ft-btn { background:transparent; border:1px solid rgba(192,192,192,0.3); color:var(--color-grey-400); padding:10px 24px; border-radius:4px; font-size:13px; cursor:pointer; transition:all 0.3s; font-family:'Poppins',sans-serif; }
+    .ft-btn:hover,.ft-btn.active { background:var(--gradient-metal); color:var(--color-black); border-color:transparent; font-weight:600; }
+    .colour-card { border-radius:12px; overflow:hidden; background:var(--color-charcoal); transition:transform 0.3s, box-shadow 0.3s; cursor:pointer; }
+    .colour-card:hover { transform:translateY(-4px); box-shadow:0 20px 60px rgba(0,0,0,0.4); }
+    .colour-swatch { height:180px; position:relative; }
+    .colour-badge { position:absolute; top:12px; right:12px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; padding:3px 10px; border-radius:20px; }
+    .badge-pc { background:rgba(192,192,192,0.2); color:var(--color-silver); border:1px solid rgba(192,192,192,0.3); }
+    .badge-an { background:rgba(100,160,255,0.15); color:#64a0ff; border:1px solid rgba(100,160,255,0.3); }
+    .badge-wg { background:rgba(180,120,60,0.2); color:#c8845a; border:1px solid rgba(180,120,60,0.3); }
+    .colour-info { padding:20px; }
+    .colour-name { font-size:16px; color:var(--color-white); font-weight:600; margin-bottom:4px; }
+    .colour-code { font-size:12px; color:var(--color-grey-500); }
+    .colour-item { transition:opacity 0.4s; }
+    .colour-item.hidden { display:none; }
+    .finish-section-title { font-family:'Raleway',sans-serif; font-size:36px; color:var(--color-white); margin-bottom:8px; }
+    .finish-section-title span { background:var(--gradient-metal); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .finish-type-icon { width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:20px; font-size:24px; }
+  </style>
+</head>
+<body>
+<div id="preloader"><div class="preloader-inner"><img src="images/logo1.png" alt="FENZO" class="preloader-logo"><div class="preloader-bar"><div class="preloader-bar-fill"></div></div></div></div>
+
+<nav class="navbar-fenzo">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo1.png" alt="FENZO Aluminium"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li class="nav-dropdown"><a href="products.html">Products ▾</a><ul class="nav-dropdown-menu"><li><a href="products.html#sliding">Sliding Systems</a></li><li><a href="products.html#openable">Openable Windows</a></li><li><a href="products.html#tilt-turn">Tilt &amp; Turn</a></li><li><a href="products.html#folding">Folding Doors</a></li><li><a href="products.html#curtain-wall">Curtain Wall</a></li><li><a href="products.html#railings">Railings</a></li><li><a href="products.html#skylights">Skylights</a></li></ul></li>
+      <li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="quote.html" class="nav-cta">Get Quote</a></li>
+    </ul>
+    <button class="nav-hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav-overlay"></div>
+<div class="mobile-nav"><button class="mobile-nav-close" aria-label="Close">&times;</button><a href="index.html" style="display:block;margin-bottom:24px;"><img src="images/logo1.png" alt="FENZO" style="height:40px;"></a><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li class="has-sub"><a href="#">Products</a><ul><li><a href="products.html#sliding">Sliding Systems</a></li><li><a href="products.html#openable">Openable Windows</a></li><li><a href="products.html#tilt-turn">Tilt &amp; Turn</a></li><li><a href="products.html#folding">Folding Doors</a></li><li><a href="products.html#curtain-wall">Curtain Wall</a></li><li><a href="products.html#railings">Railings</a></li><li><a href="products.html#skylights">Skylights</a></li></ul></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="quote.html" style="color:#c0c0c0;font-weight:700;">Get Free Quote →</a></li></ul><div style="margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.08);"><a href="tel:+919524566995" style="color:#c0c0c0;font-size:15px;display:block;margin-bottom:8px;"><i class="bi bi-telephone me-2"></i>+91 9524566995</a><a href="mailto:sales.fenzo@gmail.com" style="color:#c0c0c0;font-size:14px;"><i class="bi bi-envelope me-2"></i>sales.fenzo@gmail.com</a></div></div>
+
+<section class="page-hero" style="background:linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.68)) center/cover, url('images/assets/im2.jpg') center/cover no-repeat;">
+  <div class="container-fenzo"><div class="page-hero-content">
+    <nav class="breadcrumb-fenzo"><a href="index.html">Home</a><span>/</span><span class="current">Colours &amp; Finishes</span></nav>
+    <p class="section-eyebrow">Surface Treatments</p>
+    <h1 class="section-title">Colours &amp; <span>Finishes</span></h1>
+    <div class="section-divider"></div>
+    <p class="section-desc">Over 20 standard finishes — powder coated, anodised, and wood grain — with custom RAL colours available on request.</p>
+  </div></div>
+</section>
+
+<!-- Finish types overview -->
+<section style="padding:60px 0;background:var(--color-charcoal);">
+  <div class="container-fenzo">
+    <div class="row g-4 text-center">
+      <div class="col-lg-4 reveal">
+        <div style="display:inline-flex;" class="mb-4">
+          <div class="finish-type-icon" style="background:rgba(192,192,192,0.1);border:1px solid rgba(192,192,192,0.3);">
+            <i class="bi bi-paint-bucket" style="color:var(--color-silver);"></i>
+          </div>
+        </div>
+        <h3 style="color:var(--color-white);font-size:20px;margin-bottom:10px;">Powder Coating</h3>
+        <p style="color:var(--color-grey-400);font-size:13px;line-height:1.8;max-width:280px;margin:0 auto;">Electrostatically applied thermosetting polymer coating. Superb UV resistance, chip resistance, and the widest colour range — any RAL shade available.</p>
+        <div style="margin-top:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+          <span style="font-size:11px;color:var(--color-grey-500);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:4px;">UV Stable</span>
+          <span style="font-size:11px;color:var(--color-grey-500);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:4px;">Custom RAL</span>
+          <span style="font-size:11px;color:var(--color-grey-500);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:4px;">Matt / Gloss / Satin</span>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal">
+        <div style="display:inline-flex;" class="mb-4">
+          <div class="finish-type-icon" style="background:rgba(100,160,255,0.1);border:1px solid rgba(100,160,255,0.2);">
+            <i class="bi bi-layers" style="color:#64a0ff;"></i>
+          </div>
+        </div>
+        <h3 style="color:var(--color-white);font-size:20px;margin-bottom:10px;">Anodising</h3>
+        <p style="color:var(--color-grey-400);font-size:13px;line-height:1.8;max-width:280px;margin:0 auto;">Electrochemical oxidation that penetrates the aluminium surface to create an integral hard oxide layer. Exceptional durability, scratch resistance, and coastal corrosion protection.</p>
+        <div style="margin-top:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+          <span style="font-size:11px;color:var(--color-grey-500);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:4px;">Coastal Grade</span>
+          <span style="font-size:11px;color:var(--color-grey-500);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:4px;">25µm Thickness</span>
+          <span style="font-size:11px;color:var(--color-grey-500);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:4px;">Metallic Sheen</span>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal">
+        <div style="display:inline-flex;" class="mb-4">
+          <div class="finish-type-icon" style="background:rgba(180,120,60,0.1);border:1px solid rgba(180,120,60,0.2);">
+            <i class="bi bi-tree" style="color:#c8845a;"></i>
+          </div>
+        </div>
+        <h3 style="color:var(--color-white);font-size:20px;margin-bottom:10px;">Wood Grain</h3>
+        <p style="color:var(--color-grey-400);font-size:13px;line-height:1.8;max-width:280px;margin:0 auto;">Sublimation-applied wood-look laminate over powder-coated aluminium profiles. The warmth of timber aesthetics with the durability of aluminium — no warping, rot, or termites.</p>
+        <div style="margin-top:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+          <span style="font-size:11px;color:var(--color-grey-500);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:4px;">Timber Aesthetic</span>
+          <span style="font-size:11px;color:var(--color-grey-500);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:4px;">Zero Maintenance</span>
+          <span style="font-size:11px;color:var(--color-grey-500);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:4px;">5 Species</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Colour Swatches -->
+<section class="section-pad">
+  <div class="container-fenzo">
+    <div class="text-center mb-5">
+      <p class="section-eyebrow" style="justify-content:center;">Standard Range</p>
+      <h2 class="section-title">Browse the <span>Collection</span></h2>
+      <div class="section-divider" style="margin:16px auto 32px;"></div>
+    </div>
+
+    <div class="finish-tabs">
+      <button class="ft-btn active" data-filter="all">All Finishes</button>
+      <button class="ft-btn" data-filter="pc">Powder Coated</button>
+      <button class="ft-btn" data-filter="an">Anodised</button>
+      <button class="ft-btn" data-filter="wg">Wood Grain</button>
+    </div>
+
+    <div class="row g-4" id="coloursGrid">
+
+      <!-- Powder Coated -->
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="pc">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:#f5f5f5;">
+            <span class="colour-badge badge-pc">Powder Coat</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Pure White</div><div class="colour-code">RAL 9003 · Matt</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="pc">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:#e8e0d4;">
+            <span class="colour-badge badge-pc">Powder Coat</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Cream White</div><div class="colour-code">RAL 9001 · Satin</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="pc">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:#1a1a1a;">
+            <span class="colour-badge badge-pc">Powder Coat</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Jet Black</div><div class="colour-code">RAL 9005 · Matt</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="pc">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:#2a2a2a;">
+            <span class="colour-badge badge-pc">Powder Coat</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Graphite Black</div><div class="colour-code">RAL 9011 · Gloss</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="pc">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:#d4c4a0;">
+            <span class="colour-badge badge-pc">Powder Coat</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Champagne</div><div class="colour-code">Custom · Satin</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="pc">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:#b8a080;">
+            <span class="colour-badge badge-pc">Powder Coat</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Warm Bronze</div><div class="colour-code">Custom · Matt</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="pc">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:#c8c8c8;">
+            <span class="colour-badge badge-pc">Powder Coat</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Silver Grey</div><div class="colour-code">RAL 9006 · Metallic</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="pc">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:#888888;">
+            <span class="colour-badge badge-pc">Powder Coat</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Slate Grey</div><div class="colour-code">RAL 7015 · Matt</div></div>
+        </div>
+      </div>
+
+      <!-- Anodised -->
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="an">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:linear-gradient(135deg,#c0c0c0,#888,#c8c8c8);">
+            <span class="colour-badge badge-an">Anodised</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Anodised Silver</div><div class="colour-code">AA-10 · Natural</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="an">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:linear-gradient(135deg,#c8a878,#a07840,#c8a878);">
+            <span class="colour-badge badge-an">Anodised</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Anodised Gold</div><div class="colour-code">AA-20 · Champagne</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="an">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:linear-gradient(135deg,#5a4030,#3a2820,#5a4030);">
+            <span class="colour-badge badge-an">Anodised</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Dark Bronze</div><div class="colour-code">AA-30 · Dark</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="an">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background:linear-gradient(135deg,#1a1a1a,#0a0a0a,#2a2a2a);">
+            <span class="colour-badge badge-an">Anodised</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Black Anodised</div><div class="colour-code">AA-40 · Gloss</div></div>
+        </div>
+      </div>
+
+      <!-- Wood Grain -->
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="wg">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background-image:repeating-linear-gradient(90deg,rgba(0,0,0,0.05) 0px,rgba(0,0,0,0.05) 1px,transparent 1px,transparent 8px),linear-gradient(135deg,#8B4513,#6B3210,#8B4513);">
+            <span class="colour-badge badge-wg">Wood Grain</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Teak Wood</div><div class="colour-code">WG-01 · Natural</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="wg">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background-image:repeating-linear-gradient(90deg,rgba(0,0,0,0.06) 0px,rgba(0,0,0,0.06) 1px,transparent 1px,transparent 10px),linear-gradient(135deg,#5c3317,#3d2210,#5c3317);">
+            <span class="colour-badge badge-wg">Wood Grain</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Walnut</div><div class="colour-code">WG-02 · Dark</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="wg">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background-image:repeating-linear-gradient(90deg,rgba(0,0,0,0.04) 0px,rgba(0,0,0,0.04) 1px,transparent 1px,transparent 7px),linear-gradient(135deg,#c8a060,#a07840,#c8a060);">
+            <span class="colour-badge badge-wg">Wood Grain</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Light Oak</div><div class="colour-code">WG-03 · Honey</div></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6 colour-item" data-cat="wg">
+        <div class="colour-card">
+          <div class="colour-swatch" style="background-image:repeating-linear-gradient(90deg,rgba(0,0,0,0.03) 0px,rgba(0,0,0,0.03) 1px,transparent 1px,transparent 12px),linear-gradient(135deg,#e8d0a0,#c0a870,#e8d0a0);">
+            <span class="colour-badge badge-wg">Wood Grain</span>
+          </div>
+          <div class="colour-info"><div class="colour-name">Maple</div><div class="colour-code">WG-04 · Light</div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Custom CTA -->
+    <div class="glass-card p-5 mt-5 text-center reveal">
+      <p class="section-eyebrow" style="justify-content:center;">Bespoke</p>
+      <h3 style="font-size:32px;color:var(--color-white);margin-bottom:12px;">Need a Custom Colour?</h3>
+      <p style="color:var(--color-grey-400);font-size:14px;max-width:520px;margin:0 auto 28px;line-height:1.8;">Any RAL colour is available as a powder-coat special order — minimum quantities apply. We can also match existing site colours or your architect's specification. Lead time typically 10–14 working days.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn-fenzo-primary"><i class="bi bi-palette me-2"></i>Request Custom Colour</a>
+        <a href="quote.html" class="btn-fenzo-outline"><i class="bi bi-file-earmark-text me-2"></i>Get a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Glass Options -->
+<section class="section-pad bg-charcoal">
+  <div class="container-fenzo">
+    <div class="text-center mb-5">
+      <p class="section-eyebrow" style="justify-content:center;">Glass Specification</p>
+      <h2 class="section-title">Glass <span>Options</span></h2>
+      <div class="section-divider" style="margin:16px auto 32px;"></div>
+      <p class="section-desc" style="max-width:560px;margin:0 auto;">The right glass specification enhances comfort, safety, and energy efficiency — ask our team for a tailored recommendation.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 reveal">
+        <div class="glass-card p-4 text-center h-100">
+          <div style="font-size:40px;margin-bottom:16px;">🪟</div>
+          <h4 style="color:var(--color-white);font-size:16px;margin-bottom:8px;">Single Glazing</h4>
+          <p style="color:var(--color-grey-400);font-size:13px;line-height:1.7;">4mm or 6mm clear / tinted float glass. Cost-effective for dry climates and interior applications.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 reveal">
+        <div class="glass-card p-4 text-center h-100">
+          <div style="font-size:40px;margin-bottom:16px;">🔲</div>
+          <h4 style="color:var(--color-white);font-size:16px;margin-bottom:8px;">Double Glazing (IGU)</h4>
+          <p style="color:var(--color-grey-400);font-size:13px;line-height:1.7;">5mm + 12mm air gap + 5mm. Superior thermal insulation and noise reduction — recommended for Madurai climate.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 reveal">
+        <div class="glass-card p-4 text-center h-100">
+          <div style="font-size:40px;margin-bottom:16px;">☀️</div>
+          <h4 style="color:var(--color-white);font-size:16px;margin-bottom:8px;">Solar Control</h4>
+          <p style="color:var(--color-grey-400);font-size:13px;line-height:1.7;">Low-E or reflective coated glass blocks 60–70% solar heat gain while maintaining visible light transmission.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 reveal">
+        <div class="glass-card p-4 text-center h-100">
+          <div style="font-size:40px;margin-bottom:16px;">🛡️</div>
+          <h4 style="color:var(--color-white);font-size:16px;margin-bottom:8px;">Safety Glass</h4>
+          <p style="color:var(--color-grey-400);font-size:13px;line-height:1.7;">Toughened (tempered) or laminated glass for balconies, floor-to-ceiling panels, and safety-critical applications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container-fenzo">
+    <div class="row g-5">
+      <div class="col-lg-4"><img src="images/logo1.png" alt="FENZO" class="footer-logo"><p class="footer-desc">Premium aluminium windows, doors, and architectural facade solutions. Connect with Nature.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="https://wa.me/919524566995" target="_blank"><i class="fab fa-whatsapp"></i></a></div></div>
+      <div class="col-lg-2 col-6"><p class="footer-heading">Products</p><ul class="footer-links"><li><a href="products.html#sliding">Sliding Systems</a></li><li><a href="products.html#openable">Openable Windows</a></li><li><a href="products.html#tilt-turn">Tilt &amp; Turn</a></li><li><a href="products.html#folding">Folding Doors</a></li><li><a href="products.html#curtain-wall">Curtain Wall</a></li><li><a href="products.html#railings">Railings</a></li><li><a href="products.html#skylights">Skylights</a></li></ul></div>
+      <div class="col-lg-2 col-6"><p class="footer-heading">Company</p><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="col-lg-4"><p class="footer-heading">Get in Touch</p><div class="footer-contact-item"><i class="bi bi-geo-alt footer-contact-icon"></i><div class="footer-contact-text">21, Bypass Road, Avaniyapuram, Madurai – 625012</div></div><div class="footer-contact-item"><i class="bi bi-telephone footer-contact-icon"></i><div class="footer-contact-text"><a href="tel:+919524566995">+91 9524566995</a></div></div><div class="footer-contact-item"><i class="bi bi-envelope footer-contact-icon"></i><div class="footer-contact-text"><a href="mailto:sales.fenzo@gmail.com">sales.fenzo@gmail.com</a></div></div></div>
+    </div>
+  </div>
+  <div class="container-fenzo"><div class="footer-bottom"><p class="footer-bottom-text">&copy; 2026 FENZO Aluminium Windows &amp; Doors. All rights reserved.</p></div></div>
+</footer>
+
+<a href="https://wa.me/919524566995?text=Hello%20FENZO%2C%20I%20am%20interested%20in%20your%20aluminium%20products." class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span class="wa-tooltip">Chat with us!</span></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/fenzo.js"></script>
+<script>
+document.querySelectorAll('.ft-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.ft-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const filter = this.dataset.filter;
+    document.querySelectorAll('.colour-item').forEach(item => {
+      const cat = item.dataset.cat || '';
+      if (filter === 'all' || cat === filter) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
+
+
+
+

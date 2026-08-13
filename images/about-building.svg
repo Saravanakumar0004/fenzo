@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b263b"/>
+    </linearGradient>
+    <linearGradient id="bldg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e1e"/>
+      <stop offset="100%" style="stop-color:#111111"/>
+    </linearGradient>
+    <linearGradient id="alum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c0c0c0"/>
+      <stop offset="50%" style="stop-color:#888"/>
+      <stop offset="100%" style="stop-color:#c0c0c0"/>
+    </linearGradient>
+    <linearGradient id="win" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a5298;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#1e3c72;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="winlit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0c060;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#e08020;stop-opacity:0.4"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="600" height="700" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <circle cx="80" cy="50" r="1" fill="white" opacity="0.6"/>
+  <circle cx="150" cy="30" r="1.5" fill="white" opacity="0.4"/>
+  <circle cx="500" cy="60" r="1" fill="white" opacity="0.5"/>
+  <circle cx="450" cy="20" r="1" fill="white" opacity="0.7"/>
+  <circle cx="350" cy="40" r="1" fill="white" opacity="0.3"/>
+  <circle cx="540" cy="90" r="1.5" fill="white" opacity="0.5"/>
+
+  <!-- Background building (distant) -->
+  <rect x="350" y="200" width="80" height="400" fill="#111" opacity="0.5"/>
+  <rect x="440" y="250" width="60" height="350" fill="#151515" opacity="0.5"/>
+  <rect x="100" y="280" width="70" height="320" fill="#111" opacity="0.4"/>
+
+  <!-- Main building structure -->
+  <rect x="120" y="100" width="360" height="520" fill="url(#bldg)"/>
+
+  <!-- Aluminium vertical mullions -->
+  <rect x="120" y="100" width="4" height="520" fill="url(#alum)" opacity="0.8"/>
+  <rect x="196" y="100" width="3" height="520" fill="url(#alum)" opacity="0.6"/>
+  <rect x="272" y="100" width="3" height="520" fill="url(#alum)" opacity="0.6"/>
+  <rect x="348" y="100" width="3" height="520" fill="url(#alum)" opacity="0.6"/>
+  <rect x="424" y="100" width="3" height="520" fill="url(#alum)" opacity="0.6"/>
+  <rect x="476" y="100" width="4" height="520" fill="url(#alum)" opacity="0.8"/>
+
+  <!-- Horizontal transoms -->
+  <rect x="120" y="100" width="360" height="3" fill="url(#alum)" opacity="0.8"/>
+  <rect x="120" y="178" width="360" height="2" fill="url(#alum)" opacity="0.5"/>
+  <rect x="120" y="256" width="360" height="2" fill="url(#alum)" opacity="0.5"/>
+  <rect x="120" y="334" width="360" height="2" fill="url(#alum)" opacity="0.5"/>
+  <rect x="120" y="412" width="360" height="2" fill="url(#alum)" opacity="0.5"/>
+  <rect x="120" y="490" width="360" height="2" fill="url(#alum)" opacity="0.5"/>
+  <rect x="120" y="568" width="360" height="2" fill="url(#alum)" opacity="0.5"/>
+  <rect x="120" y="617" width="360" height="3" fill="url(#alum)" opacity="0.8"/>
+
+  <!-- Windows - Row 1 (dark/reflective) -->
+  <rect x="123" y="103" width="70" height="72" fill="url(#win)"/>
+  <rect x="199" y="103" width="70" height="72" fill="url(#win)" opacity="0.8"/>
+  <rect x="275" y="103" width="70" height="72" fill="url(#win)" opacity="1.1"/>
+  <rect x="351" y="103" width="70" height="72" fill="url(#win)" opacity="0.9"/>
+  <rect x="427" y="103" width="46" height="72" fill="url(#win)"/>
+
+  <!-- Windows - Row 2 (some lit) -->
+  <rect x="123" y="181" width="70" height="72" fill="url(#winlit)"/>
+  <rect x="199" y="181" width="70" height="72" fill="url(#win)"/>
+  <rect x="275" y="181" width="70" height="72" fill="url(#winlit)" opacity="0.8"/>
+  <rect x="351" y="181" width="70" height="72" fill="url(#win)"/>
+  <rect x="427" y="181" width="46" height="72" fill="url(#winlit)" opacity="0.6"/>
+
+  <!-- Windows - Row 3 -->
+  <rect x="123" y="259" width="70" height="72" fill="url(#win)" opacity="0.9"/>
+  <rect x="199" y="259" width="70" height="72" fill="url(#winlit)" opacity="0.9"/>
+  <rect x="275" y="259" width="70" height="72" fill="url(#win)"/>
+  <rect x="351" y="259" width="70" height="72" fill="url(#win)" opacity="0.8"/>
+  <rect x="427" y="259" width="46" height="72" fill="url(#win)"/>
+
+  <!-- Windows - Rows 4-6 -->
+  <rect x="123" y="337" width="70" height="72" fill="url(#win)"/>
+  <rect x="199" y="337" width="70" height="72" fill="url(#winlit)" opacity="0.7"/>
+  <rect x="275" y="337" width="70" height="72" fill="url(#win)"/>
+  <rect x="351" y="337" width="70" height="72" fill="url(#winlit)" opacity="0.9"/>
+  <rect x="427" y="337" width="46" height="72" fill="url(#win)"/>
+
+  <rect x="123" y="415" width="70" height="72" fill="url(#winlit)" opacity="0.8"/>
+  <rect x="199" y="415" width="70" height="72" fill="url(#win)"/>
+  <rect x="275" y="415" width="70" height="72" fill="url(#winlit)" opacity="0.6"/>
+  <rect x="351" y="415" width="70" height="72" fill="url(#win)"/>
+  <rect x="427" y="415" width="46" height="72" fill="url(#winlit)" opacity="0.7"/>
+
+  <rect x="123" y="493" width="70" height="72" fill="url(#win)"/>
+  <rect x="199" y="493" width="70" height="72" fill="url(#winlit)" opacity="0.85"/>
+  <rect x="275" y="493" width="70" height="72" fill="url(#win)" opacity="0.9"/>
+  <rect x="351" y="493" width="70" height="72" fill="url(#win)"/>
+  <rect x="427" y="493" width="46" height="72" fill="url(#win)"/>
+
+  <!-- Ground level entry -->
+  <rect x="120" y="620" width="360" height="100" fill="#111"/>
+  <rect x="230" y="620" width="140" height="100" fill="#0d0d0d"/>
+  <!-- Entry doors (aluminium) -->
+  <rect x="235" y="630" width="3" height="80" fill="url(#alum)" opacity="0.9"/>
+  <rect x="302" y="630" width="3" height="80" fill="url(#alum)" opacity="0.9"/>
+  <rect x="367" y="630" width="3" height="80" fill="url(#alum)" opacity="0.9"/>
+  <rect x="235" y="665" width="135" height="2" fill="url(#alum)" opacity="0.7"/>
+  <!-- Glass door panels -->
+  <rect x="238" y="633" width="61" height="62" fill="#1a3a5c" opacity="0.7"/>
+  <rect x="305" y="633" width="59" height="62" fill="#1a3a5c" opacity="0.5"/>
+
+  <!-- Ground -->
+  <rect x="0" y="700" width="600" height="100" fill="url(#ground)"/>
+  <!-- Ground reflection -->
+  <rect x="120" y="700" width="360" height="20" fill="#c0c0c0" opacity="0.04"/>
+
+  <!-- Subtle light on facade -->
+  <polygon points="120,100 300,100 120,400" fill="white" opacity="0.015"/>
+</svg>

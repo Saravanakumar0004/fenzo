@@ -1,0 +1,14 @@
+# The CSV backups in this folder contain customer names, phone numbers and
+# email addresses. Nothing in here may ever be reachable over the web.
+# Download them over FTP / cPanel File Manager instead.
+
+# Apache 2.4
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+
+# Apache 2.2 and older
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>

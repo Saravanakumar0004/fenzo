@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Free Quote | FENZO Aluminium Windows & Doors Madurai</title>
+  <meta name="description" content="Request a free, detailed quotation for aluminium windows, doors, curtain walls, or railings from FENZO Madurai. Fast response within 24 hours.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fenzo.css">
+  <style>
+    .step-indicator { display:flex; gap:0; margin-bottom:48px; }
+    .step-dot { flex:1; text-align:center; position:relative; }
+    .step-dot::before { content:''; position:absolute; top:20px; left:50%; right:-50%; height:2px; background:rgba(255,255,255,0.1); z-index:0; }
+    .step-dot:last-child::before { display:none; }
+    .step-circle { width:40px; height:40px; border-radius:50%; border:2px solid rgba(192,192,192,0.3); background:transparent; color:var(--color-grey-400); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; margin:0 auto 8px; position:relative; z-index:1; transition:all 0.3s; }
+    .step-dot.active .step-circle { background:var(--gradient-metal); color:var(--color-black); border-color:transparent; }
+    .step-dot.done .step-circle { background:rgba(46,204,113,0.2); border-color:#2ecc71; color:#2ecc71; }
+    .step-label { font-size:11px; color:var(--color-grey-500); text-transform:uppercase; letter-spacing:0.05em; }
+    .step-dot.active .step-label { color:var(--color-silver); }
+    .form-step { display:none; }
+    .form-step.active { display:block; }
+    .product-checkbox { display:none; }
+    .product-checkbox-label { display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px 12px; border:1px solid rgba(192,192,192,0.2); border-radius:8px; cursor:pointer; transition:all 0.3s; text-align:center; height:100%; background:rgba(255,255,255,0.02); }
+    .product-checkbox-label:hover { border-color:var(--color-silver); background:rgba(192,192,192,0.05); }
+    .product-checkbox:checked + .product-checkbox-label { border-color:var(--color-silver); background:rgba(192,192,192,0.1); box-shadow:0 0 0 2px rgba(192,192,192,0.3); }
+    .product-checkbox-label i { font-size:28px; color:var(--color-silver); margin-bottom:10px; }
+    .product-checkbox-label span { font-size:12px; color:var(--color-grey-300); font-weight:500; }
+    .range-value { font-size:13px; color:var(--color-silver); font-weight:600; margin-top:6px; }
+  </style>
+</head>
+<body>
+<div id="preloader"><div class="preloader-inner"><img src="images/logo1.png" alt="FENZO" class="preloader-logo"><div class="preloader-bar"><div class="preloader-bar-fill"></div></div></div></div>
+
+<nav class="navbar-fenzo">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo1.png" alt="FENZO Aluminium"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li class="nav-dropdown"><a href="products.html">Products ▾</a><ul class="nav-dropdown-menu"><li><a href="products.html#sliding">Sliding Systems</a></li><li><a href="products.html#openable">Openable Windows</a></li><li><a href="products.html#tilt-turn">Tilt &amp; Turn</a></li><li><a href="products.html#folding">Folding Doors</a></li><li><a href="products.html#curtain-wall">Curtain Wall</a></li><li><a href="products.html#railings">Railings</a></li><li><a href="products.html#skylights">Skylights</a></li></ul></li>
+      <li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="quote.html" class="nav-cta active">Get Quote</a></li>
+    </ul>
+    <button class="nav-hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav-overlay"></div>
+<div class="mobile-nav"><button class="mobile-nav-close" aria-label="Close">&times;</button><a href="index.html" style="display:block;margin-bottom:24px;"><img src="images/logo1.png" alt="FENZO" style="height:40px;"></a><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li class="has-sub"><a href="#">Products</a><ul><li><a href="products.html#sliding">Sliding Systems</a></li><li><a href="products.html#openable">Openable Windows</a></li><li><a href="products.html#tilt-turn">Tilt &amp; Turn</a></li><li><a href="products.html#folding">Folding Doors</a></li><li><a href="products.html#curtain-wall">Curtain Wall</a></li><li><a href="products.html#railings">Railings</a></li><li><a href="products.html#skylights">Skylights</a></li></ul></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="quote.html" style="color:#c0c0c0;font-weight:700;">Get Free Quote →</a></li></ul><div style="margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.08);"><a href="tel:+919524566995" style="color:#c0c0c0;font-size:15px;display:block;margin-bottom:8px;"><i class="bi bi-telephone me-2"></i>+91 9524566995</a><a href="mailto:sales.fenzo@gmail.com" style="color:#c0c0c0;font-size:14px;"><i class="bi bi-envelope me-2"></i>sales.fenzo@gmail.com</a></div></div>
+
+<section class="page-hero" style="background:linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.68)) center/cover, url('images/assets/im5.jpg') center/cover no-repeat;">
+  <div class="container-fenzo"><div class="page-hero-content">
+    <nav class="breadcrumb-fenzo"><a href="index.html">Home</a><span>/</span><span class="current">Get Quote</span></nav>
+    <p class="section-eyebrow">Free Consultation</p>
+    <h1 class="section-title">Request a <span>Quote</span></h1>
+    <div class="section-divider"></div>
+    <p class="section-desc">Complete the form below and receive a detailed, itemised quotation within 24 hours — no obligation.</p>
+  </div></div>
+</section>
+
+<section class="section-pad">
+  <div class="container-fenzo">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <!-- Success -->
+        <div id="quoteSuccess" style="display:none;background:rgba(46,204,113,0.12);border:1px solid rgba(46,204,113,0.4);color:#2ecc71;padding:32px;border-radius:8px;text-align:center;margin-bottom:32px;">
+          <div style="font-size:48px;margin-bottom:16px;">✓</div>
+          <h3 style="color:#2ecc71;margin-bottom:8px;">Quote Request Received!</h3>
+          <p style="margin:0;color:rgba(46,204,113,0.8);font-size:14px;">Thank you! Our team will prepare your detailed quotation and contact you within 24 hours.</p>
+          <div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+            <a href="index.html" class="btn-fenzo-outline">Back to Home</a>
+            <a href="contact.html" class="btn-fenzo-primary">Contact Us Directly</a>
+          </div>
+        </div>
+
+        <div class="glass-card p-5" id="quoteFormWrapper">
+
+          <!-- Step Indicator -->
+          <div class="step-indicator" id="stepIndicator">
+            <div class="step-dot active" id="stepDot1"><div class="step-circle">1</div><div class="step-label">Products</div></div>
+            <div class="step-dot" id="stepDot2"><div class="step-circle">2</div><div class="step-label">Project</div></div>
+            <div class="step-dot" id="stepDot3"><div class="step-circle">3</div><div class="step-label">Details</div></div>
+          </div>
+
+          <form id="quoteForm" data-lead-form="Quote Request" novalidate>
+
+            <!-- Step 1: Products -->
+            <div class="form-step active" id="step1">
+              <p class="section-eyebrow">Step 1 of 3</p>
+              <h3 style="font-size:26px;color:var(--color-white);margin-bottom:8px;">What do you need?</h3>
+              <p style="color:var(--color-grey-400);font-size:13px;margin-bottom:28px;">Select all that apply — you can choose multiple products.</p>
+
+              <div class="row g-3">
+                <div class="col-6 col-md-4">
+                  <input type="checkbox" class="product-checkbox" id="pSliding" name="products[]" value="Sliding Windows & Doors">
+                  <label for="pSliding" class="product-checkbox-label"><i class="bi bi-window"></i><span>Sliding Windows &amp; Doors</span></label>
+                </div>
+                <div class="col-6 col-md-4">
+                  <input type="checkbox" class="product-checkbox" id="pOpenable" name="products[]" value="Openable Windows">
+                  <label for="pOpenable" class="product-checkbox-label"><i class="bi bi-box-arrow-up-right"></i><span>Openable Windows</span></label>
+                </div>
+                <div class="col-6 col-md-4">
+                  <input type="checkbox" class="product-checkbox" id="pTiltTurn" name="products[]" value="Tilt & Turn">
+                  <label for="pTiltTurn" class="product-checkbox-label"><i class="bi bi-arrow-repeat"></i><span>Tilt &amp; Turn</span></label>
+                </div>
+                <div class="col-6 col-md-4">
+                  <input type="checkbox" class="product-checkbox" id="pFolding" name="products[]" value="Folding Doors">
+                  <label for="pFolding" class="product-checkbox-label"><i class="bi bi-layout-split"></i><span>Folding Doors</span></label>
+                </div>
+                <div class="col-6 col-md-4">
+                  <input type="checkbox" class="product-checkbox" id="pCurtain" name="products[]" value="Curtain Wall">
+                  <label for="pCurtain" class="product-checkbox-label"><i class="bi bi-building"></i><span>Curtain Wall</span></label>
+                </div>
+                <div class="col-6 col-md-4">
+                  <input type="checkbox" class="product-checkbox" id="pRailing" name="products[]" value="Railings">
+                  <label for="pRailing" class="product-checkbox-label"><i class="bi bi-grip-vertical"></i><span>Railings</span></label>
+                </div>
+                <div class="col-6 col-md-4">
+                  <input type="checkbox" class="product-checkbox" id="pSkylight" name="products[]" value="Skylights">
+                  <label for="pSkylight" class="product-checkbox-label"><i class="bi bi-brightness-high"></i><span>Skylights</span></label>
+                </div>
+              </div>
+
+              <div class="form-fenzo-row mt-4">
+                <div class="form-fenzo-group full">
+                  <label class="form-fenzo-label">Preferred Finish</label>
+                  <select class="form-fenzo-input" name="finish">
+                    <option value="">— Select a finish —</option>
+                    <option>Powder-Coated White</option>
+                    <option>Powder-Coated Black</option>
+                    <option>Powder-Coated Champagne</option>
+                    <option>Anodised Silver</option>
+                    <option>Anodised Dark Bronze</option>
+                    <option>Wood Grain Laminate</option>
+                    <option>Custom Colour (RAL)</option>
+                    <option>Not decided yet</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="text-end mt-4">
+                <button type="button" class="btn-fenzo-primary" onclick="goStep(2)">Next: Project Details <i class="bi bi-arrow-right ms-2"></i></button>
+              </div>
+            </div>
+
+            <!-- Step 2: Project -->
+            <div class="form-step" id="step2">
+              <p class="section-eyebrow">Step 2 of 3</p>
+              <h3 style="font-size:26px;color:var(--color-white);margin-bottom:8px;">Tell us about your project</h3>
+              <p style="color:var(--color-grey-400);font-size:13px;margin-bottom:28px;">This helps us provide the most accurate quotation.</p>
+
+              <div class="form-fenzo-row">
+                <div class="form-fenzo-group">
+                  <label class="form-fenzo-label" for="qProjectType">Project Type *</label>
+                  <select id="qProjectType" class="form-fenzo-input" name="project_type" required>
+                    <option value="">— Select type —</option>
+                    <option>New Residential Construction</option>
+                    <option>Home Renovation / Replacement</option>
+                    <option>Commercial Building</option>
+                    <option>Hospitality / Hotel</option>
+                    <option>Industrial / Warehouse</option>
+                    <option>Institutional (School / Hospital)</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-fenzo-group">
+                  <label class="form-fenzo-label">Number of Floors</label>
+                  <select class="form-fenzo-input" name="floors">
+                    <option>Ground Floor Only</option>
+                    <option>1–2 Floors</option>
+                    <option>3–5 Floors</option>
+                    <option>6–10 Floors</option>
+                    <option>10+ Floors</option>
+                  </select>
+                </div>
+                <div class="form-fenzo-group full">
+                  <label class="form-fenzo-label">Approximate Area (sq ft)</label>
+                  <input type="range" min="100" max="10000" step="100" value="1000" class="form-fenzo-input" name="area" id="areaRange" style="padding:8px 0;cursor:pointer;" oninput="document.getElementById('areaVal').textContent = this.value + ' sq ft'">
+                  <div class="range-value" id="areaVal">1000 sq ft</div>
+                </div>
+                <div class="form-fenzo-group">
+                  <label class="form-fenzo-label">Budget Range</label>
+                  <select class="form-fenzo-input" name="budget">
+                    <option>Below ₹2 Lakhs</option>
+                    <option>₹2 – 5 Lakhs</option>
+                    <option>₹5 – 15 Lakhs</option>
+                    <option>₹15 – 50 Lakhs</option>
+                    <option>Above ₹50 Lakhs</option>
+                    <option>Prefer not to say</option>
+                  </select>
+                </div>
+                <div class="form-fenzo-group">
+                  <label class="form-fenzo-label">Timeline</label>
+                  <select class="form-fenzo-input" name="timeline">
+                    <option>Within 1 month</option>
+                    <option>1–3 months</option>
+                    <option>3–6 months</option>
+                    <option>6–12 months</option>
+                    <option>Planning stage only</option>
+                  </select>
+                </div>
+                <div class="form-fenzo-group">
+                  <label class="form-fenzo-label" for="qCity">City / Location *</label>
+                  <input id="qCity" type="text" class="form-fenzo-input" name="city" placeholder="e.g. Madurai" maxlength="60" autocomplete="address-level2" required>
+                </div>
+                <div class="form-fenzo-group">
+                  <label class="form-fenzo-label">State</label>
+                  <select class="form-fenzo-input" name="state">
+                    <option>Tamil Nadu</option>
+                    <option>Kerala</option>
+                    <option>Karnataka</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Telangana</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:12px;justify-content:space-between;margin-top:24px;">
+                <button type="button" class="btn-fenzo-outline" onclick="goStep(1)"><i class="bi bi-arrow-left me-2"></i> Back</button>
+                <button type="button" class="btn-fenzo-primary" onclick="goStep(3)">Next: Your Details <i class="bi bi-arrow-right ms-2"></i></button>
+              </div>
+            </div>
+
+            <!-- Step 3: Contact -->
+            <div class="form-step" id="step3">
+              <p class="section-eyebrow">Step 3 of 3</p>
+              <h3 style="font-size:26px;color:var(--color-white);margin-bottom:8px;">Your contact details</h3>
+              <p style="color:var(--color-grey-400);font-size:13px;margin-bottom:28px;">We'll send your personalised quote to these details.</p>
+
+              <div class="form-fenzo-row">
+                <div class="form-fenzo-group">
+                  <label class="form-fenzo-label" for="qName">Full Name *</label>
+                  <input id="qName" type="text" class="form-fenzo-input" name="name" placeholder="Your full name" maxlength="80" autocomplete="name" required>
+                </div>
+                <div class="form-fenzo-group">
+                  <label class="form-fenzo-label" for="qPhone">Phone Number *</label>
+                  <input id="qPhone" type="tel" class="form-fenzo-input" name="phone" placeholder="+91 XXXXX XXXXX" maxlength="20" autocomplete="tel" required>
+                </div>
+                <div class="form-fenzo-group">
+                  <label class="form-fenzo-label">Email Address</label>
+                  <input type="email" class="form-fenzo-input" name="email" placeholder="you@example.com">
+                </div>
+                <div class="form-fenzo-group">
+                  <label class="form-fenzo-label">Company / Firm Name</label>
+                  <input type="text" class="form-fenzo-input" name="company" placeholder="(if applicable)">
+                </div>
+                <div class="form-fenzo-group full">
+                  <label class="form-fenzo-label">Additional Notes</label>
+                  <textarea class="form-fenzo-input" name="message" rows="4" placeholder="Any specific requirements, design preferences, reference images, or questions…"></textarea>
+                </div>
+                <div class="form-fenzo-group full">
+                  <label class="form-fenzo-label">How did you hear about us?</label>
+                  <select class="form-fenzo-input" name="source">
+                    <option>Google Search</option>
+                    <option>WhatsApp / Referral</option>
+                    <option>Social Media</option>
+                    <option>Architect / Designer</option>
+                    <option>Previous Customer</option>
+                    <option>Showroom Visit</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:12px;justify-content:space-between;margin-top:24px;flex-wrap:wrap;">
+                <button type="button" class="btn-fenzo-outline" onclick="goStep(2)"><i class="bi bi-arrow-left me-2"></i> Back</button>
+                <button type="submit" class="btn-fenzo-primary" style="padding:14px 32px;"><i class="bi bi-send me-2"></i>Submit Quote Request</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="glass-card p-4 mb-4 reveal">
+          <h4 style="color:var(--color-white);font-size:18px;margin-bottom:16px;">Why Choose FENZO?</h4>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="color:var(--color-grey-300);font-size:13px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--color-silver);font-size:16px;">✓</span>Free detailed quotation within 24 hours</li>
+            <li style="color:var(--color-grey-300);font-size:13px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--color-silver);font-size:16px;">✓</span>No-obligation consultation & site visit</li>
+            <li style="color:var(--color-grey-300);font-size:13px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--color-silver);font-size:16px;">✓</span>22 completed projects & 7 ongoing across Tamil Nadu</li>
+            <li style="color:var(--color-grey-300);font-size:13px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--color-silver);font-size:16px;">✓</span>5-year workmanship warranty on all work</li>
+            <li style="color:var(--color-grey-300);font-size:13px;padding:10px 0;display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--color-silver);font-size:16px;">✓</span>Premium European aluminium profiles</li>
+          </ul>
+        </div>
+        <div class="glass-card p-4 reveal">
+          <h4 style="color:var(--color-white);font-size:18px;margin-bottom:16px;">Need Help Faster?</h4>
+          <p style="color:var(--color-grey-400);font-size:13px;margin-bottom:20px;">Call or WhatsApp us directly — our team responds in minutes during business hours.</p>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="https://wa.me/919524566995" class="btn-fenzo-primary" target="_blank" style="justify-content:center;"><i class="fab fa-whatsapp me-2"></i>WhatsApp Now</a>
+            <a href="tel:+919524566995" class="btn-fenzo-outline" style="justify-content:center;"><i class="bi bi-telephone me-2"></i>+91 9524566995</a>
+          </div>
+          <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.08);">
+            <p style="color:var(--color-grey-500);font-size:12px;margin:0;"><i class="bi bi-clock me-1"></i>Mon–Sat: 9:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container-fenzo">
+    <div class="row g-5">
+      <div class="col-lg-4"><img src="images/logo1.png" alt="FENZO" class="footer-logo"><p class="footer-desc">Premium aluminium windows, doors, and architectural facade solutions. Connect with Nature.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="https://wa.me/919524566995" target="_blank"><i class="fab fa-whatsapp"></i></a></div></div>
+      <div class="col-lg-2 col-6"><p class="footer-heading">Products</p><ul class="footer-links"><li><a href="products.html#sliding">Sliding Systems</a></li><li><a href="products.html#openable">Openable Windows</a></li><li><a href="products.html#tilt-turn">Tilt &amp; Turn</a></li><li><a href="products.html#folding">Folding Doors</a></li><li><a href="products.html#curtain-wall">Curtain Wall</a></li><li><a href="products.html#railings">Railings</a></li><li><a href="products.html#skylights">Skylights</a></li></ul></div>
+      <div class="col-lg-2 col-6"><p class="footer-heading">Company</p><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="col-lg-4"><p class="footer-heading">Get in Touch</p><div class="footer-contact-item"><i class="bi bi-geo-alt footer-contact-icon"></i><div class="footer-contact-text">21, Bypass Road, Avaniyapuram, Madurai – 625012</div></div><div class="footer-contact-item"><i class="bi bi-telephone footer-contact-icon"></i><div class="footer-contact-text"><a href="tel:+919524566995">+91 9524566995</a></div></div><div class="footer-contact-item"><i class="bi bi-envelope footer-contact-icon"></i><div class="footer-contact-text"><a href="mailto:sales.fenzo@gmail.com">sales.fenzo@gmail.com</a></div></div></div>
+    </div>
+  </div>
+  <div class="container-fenzo"><div class="footer-bottom"><p class="footer-bottom-text">&copy; 2026 FENZO Aluminium Windows &amp; Doors. All rights reserved.</p></div></div>
+</footer>
+
+<a href="https://wa.me/919524566995?text=Hello%20FENZO%2C%20I%20am%20interested%20in%20your%20aluminium%20products." class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span class="wa-tooltip">Chat with us!</span></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/fenzo.js"></script>
+<script src="js/fenzo-forms.js"></script>
+<script>
+let currentStep = 1;
+
+/* Required fields live on steps that get hidden as you move through the form.
+   Check the step you are leaving, otherwise an empty field on step 2 silently
+   blocks the final submit with no visible explanation. */
+function validateStep(step) {
+  const pane = document.getElementById('step' + step);
+  const missing = [];
+  pane.querySelectorAll('[required]').forEach(field => {
+    const ok = field.value && field.value.trim() !== '';
+    field.style.borderColor = ok ? '' : 'rgba(231,76,60,0.8)';
+    if (!ok) {
+      const label = pane.querySelector('label[for="' + field.id + '"]');
+      missing.push((label ? label.textContent : field.name).replace(/\s*\*$/, '').trim());
+    }
+  });
+  return missing;
+}
+
+function stepWarning(step, missing) {
+  const pane = document.getElementById('step' + step);
+  let box = pane.querySelector('.step-warning');
+  if (!missing.length) { if (box) box.remove(); return; }
+  if (!box) {
+    box = document.createElement('div');
+    box.className = 'step-warning';
+    box.style.cssText = 'padding:12px 16px;margin-top:18px;border-radius:6px;font-size:13px;' +
+      'background:rgba(231,76,60,0.12);border:1px solid rgba(231,76,60,0.45);color:#e74c3c;';
+    pane.appendChild(box);
+  }
+  box.textContent = 'Please complete: ' + missing.join(', ');
+}
+
+function goStep(n) {
+  // Moving forward? Everything on the current step must be filled in first.
+  if (n > currentStep) {
+    const missing = validateStep(currentStep);
+    if (missing.length) { stepWarning(currentStep, missing); return; }
+  }
+  stepWarning(currentStep, []);
+
+  document.getElementById('step' + currentStep).classList.remove('active');
+  document.getElementById('stepDot' + currentStep).classList.remove('active');
+  document.getElementById('stepDot' + currentStep).classList.add('done');
+  currentStep = n;
+  document.getElementById('step' + currentStep).classList.add('active');
+  document.getElementById('stepDot' + currentStep).classList.add('active');
+  document.getElementById('stepDot' + currentStep).classList.remove('done');
+  window.scrollTo({ top: document.getElementById('quoteFormWrapper').offsetTop - 100, behavior: 'smooth' });
+}
+
+/* Guard the final submit against required fields left behind on earlier steps. */
+document.getElementById('quoteForm').addEventListener('submit', function (e) {
+  for (let s = 1; s < 3; s++) {
+    const missing = validateStep(s);
+    if (missing.length) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      goStep(s);
+      stepWarning(s, missing);
+      return;
+    }
+  }
+}, true); // capture phase: runs before the sender in fenzo-forms.js
+
+/* Swap the form for the success panel once the lead is actually delivered. */
+document.getElementById('quoteForm').addEventListener('lead:success', function () {
+  document.getElementById('quoteFormWrapper').style.display = 'none';
+  document.getElementById('quoteSuccess').style.display = 'block';
+  window.scrollTo({ top: document.getElementById('quoteSuccess').offsetTop - 100, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>
+
+
+
+
