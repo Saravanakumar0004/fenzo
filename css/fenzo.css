@@ -46,6 +46,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+   overflow-x: hidden;
 }
 
 body {
@@ -54,6 +55,10 @@ body {
   color: var(--color-grey-200);
   line-height: 1.7;
   overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+.your-section-with-reveal-left-right {
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
